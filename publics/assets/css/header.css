@@ -1,0 +1,148 @@
+header {
+    padding: -30px;
+}
+
+.top-header {
+    background-color: #222222;
+    display: flex;
+    color: #4f4f4f;
+    font-family: 'Open Sans';
+    padding: 13.5px 30px;
+}
+
+.t-header-left,
+.t-header-right {
+    flex: 50%;
+}
+
+.t-header-left p,
+.t-header-right ul li {
+    display: inline-block;
+}
+
+.t-header-left p {
+    color: #4f4f4f;
+    margin-left: 2px;
+    word-spacing: 1px;
+}
+
+.t-header-left p:hover,
+.t-header-right a:hover {
+    color: #f7f7f7;
+}
+
+.t-header-right a {
+    color: #4f4f4f;
+    margin-left: 5.5px;
+    text-decoration: none;
+}
+
+.t-header-right ul {
+    text-align: right;
+}
+
+.shop-setting {
+    margin-right: 29px;
+}
+
+.sm-icoin {
+    font-size: 12px;
+}
+
+
+/*=====================================Header Panel======================*/
+
+.nav-header {
+    display: flex;
+    border-bottom: 1px solid #dddddd;
+}
+
+.nav-header .logo {
+    margin: auto;
+}
+
+#icon-bar,
+.icon-times,
+#search-input,
+#icon-search,
+.input-search,
+.icon-search-reponsive {
+    display: none;
+    z-index: 2;
+}
+
+.menu {
+    margin: auto;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-header li {
+    display: inline-block;
+}
+
+.nav-header .menu li {
+    margin: 25px;
+}
+
+.nav-header .menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-header .menu a:hover {
+    color: #8262b5;
+}
+
+.nav-header .menu .main-menu-search-icon {
+    position: relative;
+    cursor: pointer;
+    margin-left: 50.2px;
+}
+
+.nav-header .menu .main-menu-search-icon .search-icon-dropdown {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: #282828;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-left: -100px;
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.nav-header .menu .main-menu-search-icon .search-icon-dropdown input {
+    outline: none;
+    text-indent: 10px;
+}
+
+.nav-header .menu .main-menu-search-icon .search-icon-dropdown .btn-icon-dropdown {
+    margin-left: -5px;
+    width: 25px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.nav-header .menu .main-menu-search-icon:hover .search-icon-dropdown {
+    display: block;
+}
+
+.nav-header .icoin {
+    margin: auto;
+    text-align: right;
+}
+
+.nav-header-icon-cart {
+    margin-left: 10px;
+}
+
+.nav-header .icoin a {
+    color: black;
+    font-size: 30px;
+}
+
+.nav-icoin {
+    font-size: 50px;
+}
