@@ -1,12 +1,11 @@
 <?php 
-  session_start();
 require_once('models/DatabaseModel.php');
 require_once('models/UserModel.php');
 require_once('views/View.php');
 require_once './core/session.php';
 class HomeController extends Session {
     var $model, $view, $mduser;
-
+    
     public function __construct()
     {
         $this->view = new View();
@@ -21,6 +20,7 @@ class HomeController extends Session {
                     break;
                 }
                 case 'login':
+                    self::init();
                     $err = "input is empty!";
                     if(isset($_POST['submit_login'])){
                         if(empty($_POST['email']) || empty($_POST['password'] )){
@@ -28,7 +28,7 @@ class HomeController extends Session {
                         } else{
                             $result=$this->mduser->do_login($_POST);
                            if ($result>0) {
-                            Session::setSession('login',$result);
+                            self::setSession('login',$result);
                        
                             if($result['level']==1){
                                 header('Location:?action=user-client');
